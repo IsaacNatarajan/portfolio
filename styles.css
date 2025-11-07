@@ -1,0 +1,193 @@
+/* General Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d1117; /* dark modern tech background */
+    color: #e0e0e0; /* lighter font for readability */
+}
+
+/* Header / Hero */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #161b22; /* slightly lighter dark overlay */
+}
+
+header img {
+    width: 150px;           /* size */
+    height: 150px;          /* square */
+    border-radius: 50%;     /* makes it circular */
+    border: 2px solid #58a6ff; /* neon border */
+    object-fit: cover;      /* prevents stretching */
+    display: block;
+    margin: 20px auto; 
+}
+
+header h1 {
+    margin: 20px 0 10px 0;
+    font-size: 2.8rem;
+    color: #58a6ff; /* techy neon header */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a8bfc9;
+}
+
+/* Section Styling */
+section {
+    padding: 30px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    background-color: #161b22; /* dark overlay for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+section h2 {
+    color: #58a6ff;
+    border-bottom: 2px solid #58a6ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Project Cards */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #0d1117;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(88,166,255,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #58a6ff;
+}
+
+/* Links as Buttons */
+a, .project-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #21262d;
+    color: #58a6ff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover, .project-card a:hover {
+    border-bottom: 2px solid #58a6ff;
+    background-color: #1b1f26;
+}
+
+/* Links as Buttons */
+a, .project-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #21262d; /* subtle button bg */
+    color: #58a6ff; /* link color */
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover, .project-card a:hover {
+    border-bottom: 2px solid #58a6ff; /* underline effect on hover */
+    background-color: #1b1f26;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #21262d; /* techy dark tag */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Skills Section – Boxed Layout */
+#skills {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #58a6ff;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background: rgba(33, 38, 45, 0.9); /* slightly transparent techy box */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+.skill-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.skill-box ul {
+    padding-left: 20px;
+}
+
+.skill-box ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #161b22;
+    color: #a8bfc9;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}
